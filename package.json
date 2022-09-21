@@ -1,0 +1,24 @@
+{
+  "name": "discord_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^14.3.0",
+    "ethereumjs-util": "^7.1.5",
+    "ethers": "^5.7.1",
+    "nodemon": "^2.0.19",
+    "qtumjs-lib": "^0.0.8",
+    "sqlite3": "^5.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
