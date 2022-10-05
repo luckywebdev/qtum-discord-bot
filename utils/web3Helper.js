@@ -34,7 +34,7 @@ const shortenAddress = (address, chars = 4) => {
 
 const getHexAddressFromQtum = (_address) => {
   const hexAddress = qtum.address.fromBase58Check(_address).hash.toString('hex')
-  return `0x${hexAddress}`
+  return ethers.utils.getAddress(`0x${hexAddress}`)
 }
 
 const isBase58 = (value) => /^[A-HJ-NP-Za-km-z1-9]*$/.test(value);

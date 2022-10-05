@@ -58,7 +58,7 @@ bot.on('messageCreate', (message) => {
                     // const role = fullmessage.guild.roles.cache.get(memberRoleId)
                     // const member = fullmessage.guild.members.cache.find((m) => m.id === fullmessage.author.id)
                     // member.roles.add(role);
-                    const oldRegistered = 'You are joined on game already.\nPlease enjoy your game!'
+                    const oldRegistered = 'You have joined the game already.\nPlease enjoy your game!'
                     fullmessage.guild.channels.cache.forEach((channel) => {
                         if (channel.id === channelId) {
                             channel.send(oldRegistered);
@@ -76,7 +76,7 @@ bot.on('messageCreate', (message) => {
                         // const role = fullmessage.guild.roles.cache.get(memberRoleId)
                         // const member = fullmessage.guild.members.cache.find((m) => m.id === fullmessage.author.id)
                         // member.roles.add(role);
-                        const newRegister = 'Thanks for entering address.\nPlease enjoy your game!'
+                        const newRegister = 'Thanks for your posting.\nPlease enjoy your game!'
                         fullmessage.guild.channels.cache.forEach((channel) => {
                             if (channel.id === channelId) {
                                 channel.send(newRegister);
